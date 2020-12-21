@@ -62,9 +62,9 @@ Y_train = np.load('Y_train.npy')
 Y_test = np.load('Y_test.npy')
 
 # 1980-2009
-X_train = fixY(np.load('X_train_final_1980-2009.npy'))
+X_train = np.load('X_train_final_1980-2009.npy')
 # 2005-2014
-X_test = fixY(np.load('X_test_final_2005-2014.npy'))
+X_test = np.load('X_test_final_2005-2014.npy')
 
 
 print("X_train: ", X_train.shape, np.max(X_train[:, :, :, 0]), np.min(X_train[:, :, :, 0]))
